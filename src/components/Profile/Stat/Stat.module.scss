@@ -1,0 +1,22 @@
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.counter {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}

@@ -1,0 +1,33 @@
+.input {
+  font: inherit;
+  width: 100%;
+  height: 80px;
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(var(--primary-rgb), 0.4);
+  }
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  font: inherit;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+}
