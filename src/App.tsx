@@ -195,14 +195,14 @@ const App = () => {
       <div className={isMenuHover ? `${styles.app_wrapper} ${styles.active}` : styles.app_wrapper}>
         <Header/>
         <Aside asideLinks={Object.values(ASIDE_LINKS)} callback={showMenu}/>
-        <Route path='/'>
+        <Route path='/social/profile'>
           <Profile statInfo={Object.values(STAT_INFO)} posts={posts} removePost={removePost} addPost={addPost}/>
         </Route>
 
-        <Route path='/dialogs' component={Dialogs}/>
-        <Route path='/news' component={News}/>
-        <Route path='/settings' component={Settings}/>
-        <Route path='/logout' component={Logout}/>
+        <Route path='/social/dialogs' component={Dialogs}/>
+        <Route path='/social/news' component={News}/>
+        <Route path='/social/settings' component={Settings}/>
+        <Route path='/social/logout' component={Logout}/>
       </div>
     </BrowserRouter>
   );
