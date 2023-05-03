@@ -199,10 +199,10 @@ const App = () => {
           <Profile statInfo={Object.values(STAT_INFO)} posts={posts} removePost={removePost} addPost={addPost}/>
         </Route>
 
-        <Route path='/social/dialogs' component={Dialogs}/>
-        <Route path='/social/news' component={News}/>
-        <Route path='/social/settings' component={Settings}/>
-        <Route path='/social/logout' component={Logout}/>
+        <Route path='/dialogs' component={Dialogs}/>
+        <Route path='/news' component={News}/>
+        <Route path='/settings' component={Settings}/>
+        <Route path='/logout' component={Logout}/>
       </div>
     </BrowserRouter>
   );
