@@ -195,7 +195,7 @@ const App = () => {
       <div className={isMenuHover ? `${styles.app_wrapper} ${styles.active}` : styles.app_wrapper}>
         <Header/>
         <Aside asideLinks={Object.values(ASIDE_LINKS)} callback={showMenu}/>
-        <Route path='/profile' exact>
+        <Route path='/profile'>
           <Profile statInfo={Object.values(STAT_INFO)} posts={posts} removePost={removePost} addPost={addPost}/>
         </Route>
 
