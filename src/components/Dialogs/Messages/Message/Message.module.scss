@@ -1,0 +1,74 @@
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+
+  .bubble {
+    background-color: var(--secondary);
+  }
+}
+
+.message_reverse {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+
+.userpic_wrapper {
+  flex: 0 0 50px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: -2px;
+    top: -2px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient( 145deg, #feda75, #fa7e1e, 	#d62976, #962fbf);
+  }
+
+  &:hover::after {
+    animation: 3s infinite alternate rotateGradientOnHover;
+  }
+}
+
+.userpic {
+  border: 2px solid var(--lightest);
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: border-width 0.1s;
+}
+
+.userpic_wrapper:hover .userpic {
+  border-width: 0;
+}
+
+.bubble {
+  padding: 10px;
+  background-color: var(--lightest);
+  border-radius: 10px;
+  border: 1px solid var(--secondary);
+  min-width: 100px;
+  max-width: 434px;
+  color: var(--primary);
+}
+
+.time {
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 3px;
+  text-align: right;
+  color: var(--main-text);
+}

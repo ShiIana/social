@@ -1,0 +1,30 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.dialogs_items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px 0;
+  border-right: 1px solid var(--secondary);
+  background-color: var(--lightest);
+}
+
+.dialog {
+  padding: 10px 20px;
+  color: var(--primary);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &.active {
+    background-color: var(--secondary);
+  }
+}
+
+.messages {
+  padding: 20px;
+}

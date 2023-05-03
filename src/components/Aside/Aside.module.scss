@@ -29,6 +29,10 @@
   &:hover {
     background-color: var(--secondary);
   }
+
+  &.active .link_text {
+    font-weight: 700;
+  }
 }
 
 .link_icon {
@@ -49,7 +53,7 @@
   transition: all 0.3s;
 }
 
-aside:hover .link_text {
+.aside:hover .link_text {
   opacity: 1;
   visibility: visible;
 }

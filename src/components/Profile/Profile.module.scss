@@ -1,13 +1,14 @@
 .profile {
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   align-content: start;
   gap: 30px 20px;
 }
 
 .user_wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
 }
 
 .stat_wrapper {
@@ -110,9 +111,12 @@
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   font: inherit;
   font-weight: 700;
   width: 100%;
+  max-width: 220px;
   border-radius: 10px;
   padding: 7px;
   background-color: var(--accent-light);
